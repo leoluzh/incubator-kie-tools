@@ -38,7 +38,7 @@ spec:
       podTemplate:
         initContainers:
           - name: init-postgres
-            image: registry.access.redhat.com/ubi9/ubi-micro:latest
+            image: registry.redhat.io/ubi9/ubi-micro:latest
             imagePullPolicy: IfNotPresent
             command:
               [
@@ -53,7 +53,7 @@ spec:
       podTemplate:
         initContainers:
           - name: init-postgres
-            image: registry.access.redhat.com/ubi9/ubi-micro:latest
+            image: registry.redhat.io/ubi9/ubi-micro:latest
             imagePullPolicy: IfNotPresent
             command:
               [

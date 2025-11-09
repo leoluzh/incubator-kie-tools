@@ -15,7 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-FROM docker.io/apache/incubator-kie-sonataflow-builder:main AS builder
+FROM docker.io/apache/incubator-kie-sonataflow-builder:10.1.x AS builder
 
 # variables that can be overridden by the builder
 # To add a Quarkus extension to your application
@@ -33,7 +33,7 @@ RUN /home/kogito/launch/build-app.sh ./resources
 #=============================
 # Runtime Run
 #=============================
-FROM registry.access.redhat.com/ubi9/openjdk-17-runtime:latest
+FROM registry.redhat.io/ubi9/openjdk-17-runtime:latest
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en'
   

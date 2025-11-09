@@ -122,13 +122,13 @@ KIE Sandbox expects a few things from your custom image to make sure that it can
 
 ### Example 1:
 
-Using the `registry.access.redhat.com/ubi9/openjdk-17` image as base, let's create a Dev Deployment image that follows all the requirements listed above and results in a Quarkus app running with the project files uploaded by KIE Sandbox.
+Using the `registry.redhat.io/ubi9/openjdk-17` image as base, let's create a Dev Deployment image that follows all the requirements listed above and results in a Quarkus app running with the project files uploaded by KIE Sandbox.
 
 -> **Containerfile**
 
 ```docker
 # Set the base image with Java 17 and Maven.
-FROM registry.access.redhat.com/ubi9/openjdk-17
+FROM registry.redhat.io/ubi9/openjdk-17
 
 # Arguments and environment variables to define our user and home path.
 # Obs.: This can vary according to your base image.

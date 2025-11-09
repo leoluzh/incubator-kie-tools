@@ -30,7 +30,7 @@ RUN /home/kogito/launch/build-app.sh ./resources
 #=============================
 # Runtime Run
 #=============================
-FROM registry.access.redhat.com/ubi9/openjdk-17-runtime:latest
+FROM registry.redhat.io/ubi9/openjdk-17-runtime:latest
 
 ARG QUARKUS_LAUNCH_DEVMODE=false
 

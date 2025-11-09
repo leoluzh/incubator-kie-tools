@@ -37,7 +37,7 @@ func Test_Reconciler_ProdOps(t *testing.T) {
 	workflow := test.GetBaseSonataFlowWithPreviewProfile(t.Name())
 	workflow.Spec.PodTemplate.PodSpec.InitContainers = append(workflow.Spec.PodTemplate.PodSpec.InitContainers, corev1.Container{
 		Name:    "check-postgres",
-		Image:   "registry.access.redhat.com/ubi9/ubi-micro:latest",
+		Image:   "registry.redhat.io/ubi9/ubi-micro:latest",
 		Command: []string{"sh", "-c", "until (echo 1 > /dev/tcp/postgres.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local/5432) >/dev/null 2>&1; do echo \"Waiting for postgres server\"; sleep 3; done;"},
 	})
 	client := test.NewSonataFlowClientBuilder().

@@ -17,8 +17,8 @@
 # under the License.
 #
 - name: builder
-  from: "registry.access.redhat.com/ubi8/openjdk-17:1.21"
-  version: "main"
+  from: "registry.redhat.io/ubi9/openjdk-17:1.23"
+  version: "10.1.x"
   modules:
     repositories:
       - path: modules
@@ -37,8 +37,8 @@
     manager: microdnf
 
 - name: "docker.io/apache/incubator-kie-sonataflow-devmode"
-  from: "registry.access.redhat.com/ubi8/openjdk-17:1.21"
-  version: "main"
+  from: "registry.redhat.io/ubi9/openjdk-17:1.23"
+  version: "10.1.x"
   description: "Kogito Serverless Workflow development mode with Quarkus extensions libraries preinstalled"
 
   labels:

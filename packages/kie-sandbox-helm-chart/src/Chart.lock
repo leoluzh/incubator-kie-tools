@@ -1,12 +1,12 @@
 dependencies:
 - name: cors_proxy
   repository: ""
-  version: 0.0.0
+  version: 10.1.999
 - name: extended_services
   repository: ""
-  version: 0.0.0
+  version: 10.1.999
 - name: kie_sandbox
   repository: ""
-  version: 0.0.0
-digest: sha256:ee1b087ee299c43fb848d512e5b4c97f914dc2f6d3bd45294f64b7d06006a84f
-generated: "2024-02-14T10:04:22.532439-03:00"
+  version: 10.1.999
+digest: sha256:bb95b15b095ae92e9d2d228dec99844f388751f5fbd6060952c1a1c16f92ee2e
+generated: "2025-11-09T14:27:54.359075024-03:00"
